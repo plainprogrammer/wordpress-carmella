@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Title, Description and Keywords -->
+  <title>Gallery - Carmella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  
+  
+  <!-- Google web fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+		
+  <!-- Stylesheets -->
+  <link href="style/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/font-awesome.css">
+  <link rel="stylesheet" href="style/prettyPhoto.css">
+  <link rel="stylesheet" href="style/flexslider.css">
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="style/font-awesome-ie7.css">
+  <![endif]-->		
+  <!-- Main style sheet -->
+  <link href="style/style.css" rel="stylesheet">
+  <link href="style/bootstrap-responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+   <div class="container">
+      <div class="row">
+         <div class="span6">
+			<!-- Logo section. Note down the markup. -->
+            <div class="logo">
+               <div class="two">
+                  <p>
+                     <span class="two-f-big">
+						<!-- Company Name. Replace index.html with your site name -->
+                        <a href="index.html">Carm<span class="grey">ella</span></a>
+                     </span><br />
+					 <!-- Tag line -->
+                     <span class="two-s-med grey">Praesent Sed diam</span>
+                  </p>
+               </div> 
+            </div>
+         </div>
+		 <!-- Social media icons -->
+         <div class="span4 offset2">
+            <div class="social">
+			<!-- Replace # with you profile links -->
+               <a href="#"><i class="icon-facebook"></i></a>
+               <a href="#"><i class="icon-twitter"></i></a>
+               <a href="#"><i class="icon-linkedin"></i></a>
+               <a href="#"><i class="icon-google-plus"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+
+<!-- Navigation part -->
+<div class="navigation-bar">
+   <div class="container">
+      <div class="row">
+	    <div class="span4">
+            <div class="n1">
+               <div class="two">
+                  <p class="back">
+					<!-- Link #1. Note down the markup. Replace "index.html" with your link. Replace "Home" and "Lorem Praes" with your text. -->
+                     <a href="index.html"><span class="two-f-med">Home</span><br />
+                     <span class="two-s-med grey">Lorem Praes</span></a>
+                  </p>
+               </div>
+            </div>
+            <div class="n2">
+               <div class="two">
+                  <p class="back">
+					<!-- Link #2 -->
+                     <a href="services.html"><span class="two-f-med">Services</span><br />
+                     <span class="two-s-med grey">Lorem Praes</span></a>
+                  </p>
+               </div>
+            </div>               
+         </div>
+         <div class="span4">
+            <div class="n1">
+               <div class="two">
+                  <p class="back">
+					<!-- Link #3 -->
+                     <a href="gallery.html"><span class="two-f-med">Gallery</span><br />
+                     <span class="two-s-med grey">Lorem Praes</span></a>
+                  </p>
+               </div>
+            </div>
+            <div class="n2">
+               <div class="two">
+                  <p class="back">
+					<!-- Link #4 -->
+                     <a href="blog.html"><span class="two-f-med">Blog</span><br />
+                     <span class="two-s-med grey">Lorem Praes</span></a>
+                  </p>
+               </div>
+            </div>          
+         </div>
+         <div class="span4">
+            <div class="n1">
+               <div class="two">
+                  <p class="back">
+					<!-- Link #5 -->
+                     <a href="about.html"><span class="two-f-med">About</span><br />
+                     <span class="two-s-med grey">Lorem Praes</span></a>
+                  </p>
+               </div>
+            </div>
+            <div class="n2">
+               <div class="two">
+                  <p class="back">
+					<!-- Link #6 -->
+                     <a href="contact.html"><span class="two-f-med">Contact</span><br />
+                     <span class="two-s-med grey">Lorem Praes</span></a>
+                  </p>
+               </div>
+            </div>          
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="border"></div>
+
+<!-- Gallery -->
+
+<div class="gallery-top">
+   <div class="container">
+      <div class="row">
+         <div class="span12">
+            <div class="head">
+				<!-- Title and Tag -->
+               <h2>Gallery</h2>
+               <p>Vivamus diam diam, fermentum sed</p>
+            </div>
+         </div>
+      </div>
+	  <div class="row">
+		<div class="span12">
+	  
+	                <p>
+                        <!-- Add filter names inside "data-filter". For example ".web-design", ".seo", etc., Filter names are used to filter the below images. -->
+                        <ul id="filters">
+                          <li><a href="#" data-filter="*" class="label label-inverse">All</a></li>
+                          <li><a href="#" data-filter=".one" class="label label-inverse">One</a></li>
+                          <li><a href="#" data-filter=".two" class="label label-inverse">Two</a></li>
+                          <li><a href="#" data-filter=".three" class="label label-inverse">Three</a></li>
+                          <li><a href="#" data-filter=".four" class="label label-inverse">Four</a></li>
+                          <li><a href="#" data-filter=".five" class="label label-inverse">Five</a></li>
+                        </ul>
+                    </p>
+                    <div id="portfolio">
+                        <!-- Add the above used filter names inside div tag. You can add more than one filter names. For image lightbox you need to include "a" tag pointing to image link, along with the class "prettyPhoto[pp_gal]".-->
+                       <div class="element one three"><a href="img/photos/1.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_1.jpg" alt=""/></a></div>
+                       <div class="element two one"><a href="img/photos/2.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_2.jpg" alt=""/></a></div>
+                       <div class="element three five"><a href="img/photos/3.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_3.jpg" alt=""/></a></div>
+                       <div class="element four two"><a href="img/photos/4.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_4.jpg" alt=""/></a></div>
+                       <div class="element five one"><a href="img/photos/5.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_5.jpg" alt=""/></a></div> 
+                       <div class="element four five"><a href="img/photos/6.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_6.jpg" alt=""/></a></div> 
+                       <div class="element three one"><a href="img/photos/7.jpg" class="prettyPhoto[pp_gal]"><img src="img/photos/tn_7.jpg" alt=""/></a></div>
+                    </div>
+		</div>
+	</div>
+      <hr>
+	  
+	  
+   </div>
+</div>
+
+
+<div class="border"></div>
+
+<!-- Foot section -->
+
+<div class="foot">
+   <div class="container">
+      <div class="row">
+		<!-- Two big link boxes -->
+         <div class="span6">
+            <div class="two frn1">
+				<!-- Box one. Replace # with link and anchor with your own text. -->
+               <p class="fback">
+                  <a href="#"><span class="two-f-med">Praesent Sdiam</span><br />
+                  <span class="two-s-med grey"> Donec commodo diam</span></a>
+               </p>
+            </div>          
+            <div class="two frn2">
+			<!-- Box two -->
+               <p class="fback">
+                  <a href="#"><span class="two-f-med">Donec commodo</span><br />
+                  <span class="two-s-med grey">Praesent Sed diam nisi</span></a>
+               </p>
+            </div> 
+            <div class="clearfix"></div>
+         </div>
+		 <!-- Three big link boxes. -->
+         <div class="span6">
+            <div class="two fln1">
+			<!-- Replace # with your link -->
+			<!-- Box #1 -->
+               <p class="fback">
+                  <a href="#"><span class="two-f-med">Facebook</span><br />
+                  <span class="two-s-med grey">Praet eadiam</span></a>
+               </p>
+            </div>          
+            <div class="two fln2">
+			<!-- Box #2 -->
+               <p class="fback">
+                  <a href="#"><span class="two-f-med">Twitter</span><br />
+                  <span class="two-s-med grey">Sed diam nisi</span></a>
+               </p>
+            </div> 
+            <div class="two fln3">
+			<!-- Box #3 -->
+               <p class="fback">
+                  <a href="#"><span class="two-f-med">Youtube</span><br />
+                  <span class="two-s-med grey">Aliquam utra</span></a>
+               </p>
+            </div>             
+            <div class="clearfix"></div>
+         </div>
+      </div>
+   </div>
+</div>
+
+	
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+		<!-- Copyright info with links -->
+         <p>Copyright &copy; <a href="#">Your Site</a> - <a href="#">Privacy Policy</a> / <a href="#">Disclaimer</a></p>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</footer>		
+
+<!-- JS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/isotype.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.tweet.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

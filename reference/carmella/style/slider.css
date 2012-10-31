@@ -1,0 +1,98 @@
+/* Slider #1 */
+
+.slider {
+color:#fff;
+}
+
+.slider h2{
+color:#fff;
+font-size:40px;
+line-height:40px;
+text-shadow:0px 1px 2px #333;
+}
+
+.slider p{
+color:#fff;
+font-size:18px;
+line-height:25px;
+}
+
+.slider .btn{
+font-weight:bold;
+text-transform:uppercase;
+color:#fff;
+}
+
+.slider .flexslider{
+background:transparent !important;
+border:none !important;
+border-radius:none !important;
+box-shadow:none !important;
+margin-bottom:0px !important;
+}
+
+.slider .padd{
+padding:50px 20px;
+margin:10px 0px;
+}
+
+/* Change the max-width of your image below */
+
+.slider .padd img{
+max-width:256px !important;
+}
+
+.slider .carousel li {
+margin-right:0px !important;
+}
+
+.slider .flex-direction-nav .flex-next {
+right: 5px !important; 
+}
+
+.slider .flex-direction-nav .flex-prev {
+left: 5px !important;
+}
+
+.slider .back-p{
+background:#ff0086;
+}
+
+.slider .back-g{
+background:#01ca18;
+}
+
+.slider .back-b{
+background:#00a9e7;
+}
+
+.slider .back-r{
+background:#ff2828;
+}
+
+/* Responsive */
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 767px){
+   /* Slider #1 */
+   .slider{
+   text-align:center;
+   }
+   .slider img{
+   margin:0 auto;
+   }
+   .slider .padd{
+   padding:20px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+
+}
+
+@media (max-width: 979px){
+
+}
