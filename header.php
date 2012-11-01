@@ -5,8 +5,9 @@
 <!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html <?php language_attributes(); ?> class="no-js ie8"> <![endif]-->
 <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-	
+
 	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
@@ -14,9 +15,17 @@
 			<?php if ( !is_front_page() ) { echo wp_title( ' ', true, 'left' ); echo ' | '; }
 			echo bloginfo( 'name' ); echo ' - '; bloginfo( 'description', 'display' );  ?> 
 		</title>
-				
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
+    <!-- Google web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Support for IE -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shim.js"></script>
+    <![endif]-->
+
 		<!-- icons & favicons -->
 		<!-- For iPhone 4 -->
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/h/apple-touch-icon.png">
@@ -42,6 +51,14 @@
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
   		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/less/bootstrap.less">
+  		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css">
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/prettyPhoto.css">
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css">
+      <!--[if IE 7]>
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome-ie7.css">
+      <![endif]-->
+      <!-- Main style sheet -->
+      <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
   		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/less/responsive.less">
 
 		<!-- wordpress head functions -->
@@ -88,41 +105,37 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-				
-		<header role="banner">
-		
-			<div id="inner-header" class="clearfix">
-				
-				<div class="navbar navbar-fixed-top">
-					<div class="navbar-inner">
-						<div class="container-fluid nav-container">
-							<nav role="navigation">
-								<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-								
-								<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-								</a>
-								
-								<div class="nav-collapse">
-									<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-								</div>
-								
-							</nav>
-							
-							<?php if(of_get_option('search_bar', '1')) {?>
-							<form class="navbar-search pull-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-								<input name="s" id="s" type="text" class="search-query" autocomplete="off" placeholder="<?php _e('Search','bonestheme'); ?>" data-provide="typeahead" data-items="4" data-source='<?php echo $typeahead_data; ?>'>
-							</form>
-							<?php } ?>
-							
-						</div>
-					</div>
-				</div>
-			
-			</div> <!-- end #inner-header -->
-		
-		</header> <!-- end header -->
+		<!-- Header -->
+    <header>
+       <div class="container">
+          <div class="row">
+             <div class="span6">
+    			<!-- Logo section. Note down the markup. -->
+                <div class="logo">
+                   <div class="two">
+                      <p>
+                         <span class="two-f-big">
+    						<!-- Company Name. Replace index.html with your site name -->
+                            <a href="index.html">Carm<span class="grey">ella</span></a>
+                         </span><br />
+    					 <!-- Tag line -->
+                         <span class="two-s-med grey">Praesent Sed diam</span>
+                      </p>
+                   </div>
+                </div>
+             </div>
+    		 <!-- Social media icons -->
+             <div class="span4 offset2">
+                <div class="social">
+    			<!-- Replace # with you profile links -->
+                   <a href="https://www.facebook.com/firstbaptistprovo"><i class="icon-facebook"></i></a>
+                   <!-- <a href="#"><i class="icon-twitter"></i></a> -->
+                   <!-- <a href="#"><i class="icon-linkedin"></i></a> -->
+                   <!-- <a href="#"><i class="icon-google-plus"></i></a> -->
+                </div>
+             </div>
+          </div>
+       </div>
+    </header>
 		
 		<div class="container-fluid">
